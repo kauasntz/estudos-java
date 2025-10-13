@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Eblocosinicializacao.test;
 
-import academy.devdojo.maratonajava.javacore.Eblocosinicializacao.domain.Serie;
+import academy.devdojo.maratonajava.javacore.Eblocosinicializacao.dominio.Serie;
 
 public class SerieTest01 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Fmodificadorestatico.test;
 
-import academy.devdojo.maratonajava.javacore.Fmodificadorestatico.domain.Serie;
+import academy.devdojo.maratonajava.javacore.Fmodificadorestatico.dominio.Serie;
 
 public class SerieTest01 {
     public static void main(String[] args) {

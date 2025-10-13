@@ -1,19 +1,32 @@
-package academy.devdojo.maratonajava.javacore.Eblocosinicializacao.domain;
+package academy.devdojo.maratonajava.javacore.Fmodificadorestatico.dominio;
 
 public class Serie {
     private String nome;
-    private int[] episodios;
+    private static int[] episodios;
+    // 0 - Bloco de inicialização é executado quando a JVM carregar a classe
     // 1 - Alocado espaco em memória pro objeto
     // 2 - Cada atributo de classe é criado e inicializado com valores default ou o que for passado
     // 3 - Bloco de inicialiazação é executado
     // 4 - Construtor é inicializado
 
-    {
-        System.out.println("Bloco de inicialização");
+    static {
+        System.out.println("Bloco de inicialização estático 1");
         episodios = new int[100];
         for (int i = 0; i < episodios.length; i++) {
             episodios[i] = i+1;
         }
+    }
+
+    static {
+        System.out.println("Bloco de inicialização estático 2 ");
+    }
+
+    static {
+        System.out.println("Bloco de inicialização estático 3");
+    }
+
+    {
+        System.out.println("Bloco de inicialização não estático");
     }
 
     public Serie(String nome) {
@@ -21,7 +34,7 @@ public class Serie {
     }
 
     public Serie() {
-        for (int episodio: this.episodios){
+        for (int episodio: Serie.episodios){
             System.out.print(episodio + " ");
         }
         System.out.println();
