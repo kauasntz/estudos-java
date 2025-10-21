@@ -13,17 +13,16 @@ public class HerancaTest01 {
         endereco2.setRua("Grunge St.");
         endereco2.setCep("000000-002");
 
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Ringo Starr");
+        Pessoa pessoa = new Pessoa("Ringo Starr");
         pessoa.setCpf("123.456.789-10");
         pessoa.setEndereco(endereco1);
         pessoa.imprime();
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setNome("Layne Stanley");
+        Funcionario funcionario = new Funcionario("Layne Stanley");
         funcionario.setCpf("000.000.000-01");
         funcionario.setEndereco(endereco2);
         funcionario.setSalario(7500);
         funcionario.imprime();
+        funcionario.relatorioPagamento();
     }
 }
