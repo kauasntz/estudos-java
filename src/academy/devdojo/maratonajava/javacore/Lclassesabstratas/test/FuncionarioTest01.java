@@ -9,7 +9,9 @@ public class FuncionarioTest01 {
         Funcionario gerente = new Gerente("Ronaldo", 4000 );
         Desenvolvedor desenvolvedor = new Desenvolvedor("El Pepe", 10000 );
 
-        System.out.println(gerente.toString());
-        System.out.println(desenvolvedor.toString());
+        System.out.println(gerente);
+        System.out.println(desenvolvedor);
+        gerente.imprime();
+        desenvolvedor.imprime();
     }
 }
