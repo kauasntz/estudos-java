@@ -1,0 +1,21 @@
+package academy.devdojo.maratonajava.javacore.Qstring.test;
+
+public class StringTest02 {
+    public static void main(String[] args) {
+        String nome = " Milton ";
+        String numeros = "012345";
+
+        for (int i = 0; i < nome.length(); i++) {
+            System.out.println(nome.charAt(i));
+        }
+
+        System.out.println(nome.length());
+        System.out.println(nome.replace("o", "ooo"));
+        System.out.println(nome.toLowerCase());
+        System.out.println(nome.toUpperCase());
+
+        System.out.println(numeros.length());
+        System.out.println(numeros.substring(3));
+        System.out.println(nome.trim());
+    }
+}
