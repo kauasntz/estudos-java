@@ -19,3 +19,4 @@ public class StringTest02 {
         System.out.println(nome.trim());
     }
 }
+    
