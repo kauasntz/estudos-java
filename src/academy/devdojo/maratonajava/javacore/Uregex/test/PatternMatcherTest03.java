@@ -13,14 +13,12 @@ public class PatternMatcherTest03 {
         // \W = Tudo que nao for incluso no \w
         // []
 
-//        String regex = "[a-zA-C]";
         String regex = "0[xX][0-9a-fA-f]";
-//        String texto = "[abaaba]";
-        String texto2 = "12 0x 0X 0xFFABC 0x109 0x1";
+        String texto = "12 0x 0X 0xFFABC 0x109 0x1";
         Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(texto2);
+        Matcher matcher = pattern.matcher(texto);
 
-        System.out.println("texto:  "+ texto2);
+        System.out.println("texto:  "+ texto);
         System.out.println("indice: 0123456789");
         System.out.println("regex: " + regex);
         System.out.println("Posicoes encontradas:");
